@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script>
+    function showQuestion(questionID, currentID) {
+        document.getElementById(currentID).style.display = "none";
+        document.getElementById(questionID).style.display = "inline";
+    }
+    function showQ2() {
+        document.getElementById("Question1").style.display = "none";
+        document.getElementById("Question2").style.display = "inline";
+    }
+    function showQ3() {
+        document.getElementById("Question1").style.display = "none";
+        document.getElementById("Question3").style.display = "inline";
+    }
+</script>
+<style>
+    .question
+    {
+        display: none;
+    }
+</style>
+<body>
+<header>
+    A dynamic Questionnaire.
+</header>
+<section>
+    <article>
+        <hgroup>
+            <h1>Questionnaire</h1>
+            <h2>Answer the questions in order as they appear.</h2>
+        </hgroup>
+        <div id="Question1">
+            1. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question2", "Question1")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question3", "Question1")'>no
+        </div>
+        <div id="Question2" class="question">
+            2. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question4", "Question2")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question5", "Question2")'>no
+        </div>
+        <div id="Question3" class="question">
+            3. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question6", "Question3")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question6", "Question3")'>no
+        </div>
+        <div id="Question4" class="question">
+            4. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question10", "Question4")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question10", "Question4")'>no
+        </div>
+        <div id="Question5" class="question">
+            5. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question10", "Question5")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question10", "Question5")'>no
+        </div>
+        <div id="Question6" class="question">
+            6. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question7", "Question6")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question8", "Question6")'>no
+        </div>
+        <div id="Question7" class="question">
+            7. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question9", "Question7")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question9", "Question7")'>no
+        </div>
+        <div id="Question8" class="question">
+            8. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question9", "Question8")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question9", "Question8")'>no
+        </div>
+        <div id="Question9" class="question">
+            9. ....<br>
+            <input type="radio" name="q1" value="yes" onclick='showQuestion("Question10", "Question9")'>yes<br>
+            <input type="radio" name="q1" value="no" onclick='showQuestion("Question10", "Question9")'>no
+        </div>
+        <div id="Question10" class="question">
+            10. ....<br>
+            <input type="radio" name="q1" value="yes" onclick=''>yes<br>
+            <input type="radio" name="q1" value="no" onclick=''>no
+        </div>
+    </article>
+</section>
+</body>
+</html>

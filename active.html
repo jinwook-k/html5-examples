@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a id="tcpa_link" href="http://app.activeprospect.com/flow/065fa3">Tuesday's coming, did you bring your coat?</a>
+</body>
+<script>
+    var the_id = document.getElementById('tcpa_link').getAttribute('href').split('/').pop();
+    alert(the_id);
+
+    var jsonfile =
+    {
+        "appended": {
+            "email_validation": {
+                "email": {
+                    "address": "testtest@gmail.com",
+                    "error": ["Email account invalid"],
+                    "error_code": null,
+                    "outcome": "failure",
+                    "reason": ["Email account invalid"],
+                    "status": "invalid"
+                }
+            }
+        },
+        "outcome": "failure",
+        "reason": "email account invalid"
+    }
+
+</script>
+</html>
